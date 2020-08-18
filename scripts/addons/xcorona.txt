@@ -1,0 +1,28 @@
+key: virus 10
+  decomp: *
+    reasmb: Which virus are you talking about?
+    reasmb: Have you been sick?
+    reasmb: I'm not sure which virus you're talking about?
+key: covid 10
+  decomp: *
+    reasmb: goto xvirus
+key: corona 3
+  decomp: *
+    reasmb: goto xvirus
+key: coronavirus 10
+  decomp: *
+    reasmb: goto xvirus
+key: covid-19 10
+  decomp: *
+    reasmb: goto xvirus
+key: xvirus
+  decomp: *
+    reasmb: Do you think about &it often?
+    reasmb: It's hard to know what to do in times like these.
+    reasmb: Let's keep chatting. Sometimes it helps to talk it through.
+    reasmb: What strategies are you using to cope?
+    reasmb: goto bored
+key: bored 10
+  decomp: *
+    reasmb: Have you tried a new hobby?
+    reasmb: confirm Would you like some suggestions?

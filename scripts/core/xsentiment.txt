@@ -1,0 +1,14 @@
+key: positive 10
+  decomp: *
+    reasmb: Thats great to hear!
+    reasmb: How great!
+    reasmb: Wonderful! What else is going on?
+key: neutral 10
+  decomp: *
+    reasmb: goto xnone
+key: negative 10
+  decomp: *
+    reasmb: I'm sorry to hear that!
+    reasmb: Thats not good!
+    reasmb: Uh oh. Is this conversation upsetting you?
+

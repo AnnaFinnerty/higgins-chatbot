@@ -1,0 +1,19 @@
+key: deutsch
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: I told you before, I don't understand German.
+key: francais
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: I told you before, I don't understand French.
+key: italiano
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: I told you before, I don't understand Italian.
+key: espanol
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: I told you before, I don't understand Spanish.
+key: xforeign
+  decomp: *
+    reasmb: I'm so sorry, but I only speak English.

@@ -1,0 +1,94 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+    background: black;
+    color: whitesmoke;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 10vh;
+    min-height: 10vh;
+    line-height: 13vh;
+    width: 100vw;
+    margin-bottom: 0;
+}
+
+textarea{
+    margin-top: 5vh;
+    height: 25vh;
+    font-size: 6vh;
+    width: 70vw;
+    background: rgb(15, 15, 15);
+    color: whitesmoke;
+    text-align: left;
+    border-radius: .5%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1vw;
+    resize: none;
+}
+
+.bottom{
+    height: 60vh;
+    width: 100vw;
+}
+
+.top{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hidden{
+    display: none;
+}
+
+.thinking{
+    display: inline;
+}
+
+.thinking:after {
+    content: ' .';
+    animation: think 2s steps(5, end) infinite;}
+  
+  @keyframes think {
+    0%, 20% {
+      color: rgba(0,0,0,0);
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    40% {
+      color: white;
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    60% {
+      text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+      text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 white;}}
+
+@media screen and (max-width: 800px) {
+    h1{
+        font-size: 7vh;
+        line-height: 10vh;
+        margin-top: 5vh;
+    }
+    
+    input{
+        height: 10vh;
+        font-size: 7vh;
+    }
+  }

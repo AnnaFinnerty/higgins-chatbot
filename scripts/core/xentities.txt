@@ -1,0 +1,8 @@
+key: person 10
+  decomp: *
+    reasmb: Who's that?
+key: location 10
+  decomp: *
+    reasmb: What's that place?
+
+

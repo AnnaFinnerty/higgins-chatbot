@@ -1,0 +1,15 @@
+key: are
+  decomp: * are you *
+    reasmb: Are you interested in whether I'm (2) or not?
+    reasmb: Would you prefer if I weren't (2)?
+    reasmb: Do you sometimes think I am (2)?
+    reasmb: goto what
+key: your
+  decomp: * your *
+    reasmb: Thanks for asking about my (2)?
+    reasmb: Why are you concerned over my (2)?
+    reasmb: What about your own (2)?
+    reasmb: Really, my (2)?
+key: higgins
+  decomp: * 
+    reasmb: yup, that's my name?
