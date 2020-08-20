@@ -312,7 +312,7 @@ key: why
     reasmb: goto what
 key: everyone 2
   decomp: * @everyone *
-    reasmb: Realy, (2) ?
+    reasmb: Really, (2) ?
     reasmb: Surely not (2) .
     reasmb: Can you think of anyone in particular ?
     reasmb: Who, for example?

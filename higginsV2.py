@@ -16,6 +16,8 @@ from collections import namedtuple
 from pathlib import Path
 import time
 from pprint import pprint
+from dotenv import load_dotenv
+load_dotenv()
 
 
 # Fix Python2/Python3 incompatibility
@@ -184,12 +186,11 @@ class Higgins:
         self.loads3file(obj)
         my_bucket = s3_client.Bucket(bucket)
         for object_summary in my_bucket.objects.filter(Prefix="scripts/core/"):
-            print(object_summary.key)
+            # print(object_summary.key)
             obj = s3_client.Object(bucket, object_summary.key)
-            print(obj)
+            # print(obj)
             self.loads3file(obj)
         
-
     def _match_decomp_r(self, parts, words, results):
         if not parts and not words:
             return True
@@ -256,12 +257,12 @@ class Higgins:
         return output
 
     def _match_key(self, words, key):
-        print(key)
-        print(words)
+        # print(key)
+        # print(words)
         for decomp in key.decomps:
-            print(decomp.parts)
+            # print(decomp.parts)
             results = self._match_decomp(decomp.parts, words)
-            print(results)
+            # print(results)
             if results is None:
                 log.debug('Decomp did not match: %s', decomp.parts)
                 continue
@@ -323,12 +324,14 @@ class Higgins:
                 words = [w for w in text.split(' ') if w]
                 words = self._sub(words, self.pres)
                 if e['Text'] in self.mtm:
-                    print('in mtm')
-                    print(e['Text'])
+                    # print('in mtm')
+                    # print(e['Text'])
+                    pass
                 else:
                     self.mtm[e['Text']] = []
                     self.mtm[e['Text']].append(output)
-                    print(self.mtm)
+                    # print(self.mtm)
+                    
                 output = self._match_key(words, key)
                 self.stm.append(output)
                 return output

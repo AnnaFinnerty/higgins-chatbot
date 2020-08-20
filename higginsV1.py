@@ -289,7 +289,7 @@ class Higgins:
 
 def main():
     higgins = Higgins()
-    higgins.load('script.txt')
+    higgins.load('scripts/core/script.txt')
     higgins.run()
 
 if __name__ == '__main__':
@@ -297,7 +297,7 @@ if __name__ == '__main__':
     main()
 else:
     higgins = Higgins()
-    higgins.load('script.txt')
+    higgins.load('scripts/core/script.txt')
 
 
 def lambda_handler(event, context):
